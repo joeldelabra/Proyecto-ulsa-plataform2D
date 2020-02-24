@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Gamedata : MonoBehaviour
+[Serializable]
+public class GameData 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    Player player;
+    [SerializeField]
+    Vector3 playerPos;
 
-    // Update is called once per frame
-    void Update()
+    public Player Player
     {
-        
+        get => player;
+        set => player = value;
     }
+    public Vector3 PlayerPos { get => playerPos; set => playerPos = value; }
 }
