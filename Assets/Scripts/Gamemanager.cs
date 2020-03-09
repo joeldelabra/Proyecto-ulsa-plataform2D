@@ -1,5 +1,4 @@
-﻿  
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Platform2DUtils.MemorySystem;
@@ -47,12 +46,8 @@ public class Gamemanager : MonoBehaviour
         MemorySystem.DeleteData();
     }
 
-     void Start()
+    void Start()
     {
-        Delete();
-        Load();
-        Debug.Log(gameData.PlayerPos);
-
         //int scene = SceneManager.GetActiveScene().buildIndex;
        //score.gameObject.SetActive(scene > 0);
     }

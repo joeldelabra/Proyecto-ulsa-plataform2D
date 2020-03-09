@@ -25,7 +25,7 @@ public class Enemy : Character2D
             dir.x = dir.x > 0 ? -1 : 1;
             IFlip flip = new NPCFlip();
             spr.flipX = flip.FlipSprite(dir.x, spr);
-      
+            //FlipSprite();
         }
     }
 
